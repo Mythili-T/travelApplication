@@ -1,0 +1,48 @@
+<app-home></app-home>
+<div class="content">
+  <form>
+    <h2>Flight Booking Form</h2>
+    <h3>Flight Details</h3>
+    <div class="flex">
+      <label for="Departure-airport">Departure </label>
+      <input type="text" id="Departure-Airport" name="departure-port" autocomplete="off" required>
+      <label for="Destination-airport">Destination </label>
+      <input type="text" id="Destination-Airport" name="Destination-port" autocomplete="off" required>
+    </div>
+    <div class="flex">
+      <label for="Departure-date">Departure Date</label>
+      <input type="date" id="Departure-date" name="departure-date" autocomplete="off" required>
+      <label for="return-date">Return Date</label>
+      <input type="date" id="return-date" name="return-date" autocomplete="off" required>
+    </div>
+    <div class="flex">
+      <label for="Passengers-count">Flight Name</label>
+      <input type="text" id="Passengers-count" name="passengercount" autocomplete="off" required>
+      <label for="Preferred-class">Preferred class</label>
+      <select id="Passengers-count" autocomplete="off" required>
+        <option value="1">First</option>
+        <option value="2">Second</option>
+        <option value="3">Third</option>
+      </select>
+    </div>
+    <h3>Traveler Information</h3>
+    <div class="flex">
+    <label for="Passengers-name">Passenger Name</label>
+    <input type="text" id="Passengers-name" name="passengername" autocomplete="off" required>
+    <label for="Passengers-contact">Contact Number</label>
+    <input type="number" id="Passengers-contact" name="passengerscontact" autocomplete="off" required>
+  </div>
+  <div class="flex">
+    <label for="Passengers-age">Passenger Age</label>
+    <input type="number" id="Passengers-age" name="passengersage" autocomplete="off" required>
+    <label for="Seat-preferences">Seat preferences</label>
+    <select id="Passengers-count" autocomplete="off" required>
+      <option value="1">Window</option>
+      <option value="2">Middle</option>
+      <option value="3">Aisle</option>
+    </select>
+  </div>
+  <br>
+  <button id="subbtn" (click)="onsubmit()">Submit</button>
+  </form>
+</div>

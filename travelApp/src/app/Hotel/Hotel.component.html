@@ -1,0 +1,44 @@
+<app-home></app-home>
+<div class="content">
+  <form>
+    <h2>Hotel Reservation Form</h2>
+    <br>
+    <div class="flex">
+      <label for="roomType">Room/Suite Type</label>
+          <select id="roomType" name="roomType" ngModel>
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Suite</option>
+
+          </select>
+      <label for="checkInDate">Check-In Date</label>
+      <input type="date" id="checkInDate" name="checkInDate" required>
+    </div>
+    <div class="flex">
+      <label for="checkOutDate">Check-Out Date</label>
+      <input type="date" id="checkOutDate" name="checkOutDate" required>
+      <label for="Number Of Rooms">Number Of Rooms</label>
+      <input type="number" id="Number Of Rooms" name="Number Of Rooms" required>
+    </div>
+    <div class="flex">
+      <label for="adults">Number of Adults</label>
+      <input type="number" id="adults" name="adults" required>
+      <label for="children">Number of Children</label>
+      <input type="number" id="children" name="children" required>
+    </div>
+  <div class="flex">
+    <label for="Passengers-contact">Contact Number</label>
+    <input type="number" id="Passengers-contact" name="passengerscontact" autocomplete="off" required>
+    <label for="restaurantFacility">Restaurant Facility</label>
+    <select id="restaurantFacility" name="restaurantFacility" ngModel >
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  </div>
+    <button type="submit" id="subbtn" (click)="onsubmit()">Submit</button>
+  </form>
+</div>
+
+
+
+

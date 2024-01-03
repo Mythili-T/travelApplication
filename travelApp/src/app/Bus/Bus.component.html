@@ -1,0 +1,45 @@
+<app-home></app-home>
+<div class="content">
+  <form>
+    <h2>Bus Booking Form</h2><br>
+    <div class="flex">
+      <label for="Passenger Name">Passenger Name</label>
+      <input type="text" class="form-control" id="Passenger Name" name="Passenger Name" required>
+      <label for="Contact Number">Contact Number</label>
+      <input type="number" class="form-control" id="Contact Number" name="Contact Number" required>
+    </div>
+    <div class="flex">
+      <label for="departure">Email Address</label>
+      <input type="email" class="form-control" id="departure" name="departure"  required>
+      <label for="date">Date Of Pick-Up</label>
+      <input type="date" class="form-control" id="date" name="date"  required>
+    </div>
+    <div class="flex">
+      <label for="departure">Departure</label>
+      <input type="text" class="form-control" id="departure" name="departure"  required>
+      <label for="destination">Destination</label>
+      <input type="text" class="form-control" id="destination" name="destination"  required>
+  </div>
+    <div class="flex">
+        <label for="City">City</label>
+        <input type="text" class="form-control" id="City" name="City"  required>
+        <label for="Region">Region</label>
+        <input type="text" class="form-control" id="Region" name="Region"  required>
+    </div>
+
+    <div class="flex">
+      <label for="Number Of Seats">Number Of Seats</label>
+      <input type="number" class="form-control" id="Number Of Seats" name="Number Of Seats"  required>
+      <label for="Number Of Seats"> Seat type</label>
+      <select id="Passengers-count" autocomplete="off" required>
+        <option value="1">Regular seats</option>
+        <option value="2">Comfort seats</option>
+        <option value="3">Executive Seats</option>
+        <option value="4">Sleeper</option>
+      </select>
+    </div>
+    <button type="submit" id="subbtn" (click)="onsubmit()">Submit</button>
+  </form>
+</div>
+
+

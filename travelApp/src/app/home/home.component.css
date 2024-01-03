@@ -1,0 +1,41 @@
+#home{
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: rgb(235, 127, 38);
+}
+
+#flight{
+  background-color: #333;
+  padding-left: 30px!important;
+  margin-right: 73%;
+  padding:5px;
+}
+ a{
+  text-decoration: none;
+  color: white;
+}
+
+#bus{
+  background-color: #333;
+  color: white;
+  padding-left: 30px!important;
+  margin-right: 73%;
+  padding:5px;
+}
+
+#car{
+  background-color: #333;
+  color: white;
+  padding-left: 30px!important;
+  margin-right: 73%;
+  padding:5px;
+}
+
+#hotel{
+  background-color: #333;
+  color: white;
+  padding-left: 30px!important;
+  margin-right: 73%;
+  padding:5px;
+}
