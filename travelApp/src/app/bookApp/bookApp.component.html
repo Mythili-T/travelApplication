@@ -1,0 +1,13 @@
+<app-Header></app-Header>
+
+<div class="images-flex" *ngFor="let item of getMaterials">
+  <div class="course-image">
+    <div class="images">
+      <img [src]="item.ImagesUrl" alt="image" id="peImg">
+    </div>
+  </div>
+  <div class="videos">
+    <button>View details</button>
+  </div>
+
+</div>

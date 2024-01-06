@@ -9,7 +9,10 @@ import { BusComponent } from './Bus/Bus.component';
 import { CarComponent } from './Car/Car.component';
 import { HotelComponent } from './Hotel/Hotel.component';
 import { HomeComponent } from './home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BookAppComponent } from './bookApp/bookApp.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AddBookComponent } from './add-book/add-book.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,15 @@ import { FormsModule } from '@angular/forms';
       CarComponent,
       HotelComponent,
       HomeComponent,
+      BookAppComponent,
+      AddBookComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()
